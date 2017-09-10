@@ -1,12 +1,37 @@
 /* --universal-- */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,700');
 
 
 html {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  color: rgb(45, 45, 45);
 }
+
+body {
+  font-size: 14px;
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#sub {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#quote {
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+a {
+  color: rgb(244, 179, 26);
+}
+
 
 /* --header-- */
 
@@ -31,10 +56,14 @@ header .logo img {
 header .logo span {
   display: flex;
   line-height: 32px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 header h1 {
   font-weight: 500;
+  letter-spacing: normal;
 }
 
 header nav {
@@ -49,4 +78,129 @@ header nav span {
 
 header nav #end {
   padding-right: 24px;
+}
+
+header nav span a {
+  text-decoration: none;
+  color: rgb(244, 179, 26);
+  transition: all 300ms ease;
+}
+
+header nav span a:hover {
+  color: rgb(45, 45, 45);
+}
+
+/*-- banner --*/
+
+.banner {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: rgb(225, 225, 225);
+  align-items: center;
+}
+
+.banner img {
+  width: 60%;
+  height: auto;
+  padding: 32px 24px;
+}
+
+.banbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.banbox #title {
+  padding-bottom: 15px;
+}
+
+.banbox .button {
+  display: flex;
+  padding: 8px auto;
+  background-color: rgb(244, 179, 26);
+  width: 12rem;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all ease 200ms;
+  margin-top: 20px;
+}
+
+.banbox .button:hover {
+  box-shadow: 0px 0px 16px -5px rgba(66,66,66,1);
+}
+
+.banbox .button span {
+  color: white;
+  padding: 12px 0;
+}
+
+/*-- info section --*/
+
+.info {
+  display: flex;
+}
+
+.info .info-left {
+  width: 60%;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info .info-left img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 32px;
+}
+
+#title2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.info .info-left #quote,
+.info .info-left #quoter {
+  padding-top: 24px;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  padding-top: 32px;
+}
+
+.info-cards .card {
+  display: flex;
+  align-items: center;
+}
+
+.info-cards img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.info-cards #orientation {
+  padding-top: 0;
+}
+
+.info-cards .card-info span {
+  display: block;
+  padding-top: 8px;
+}
+
+#highlight {
+  background-color: rgb(225, 225, 225);
+}
+
+
+/*-- course tiles --*/
+
+.course-tiles {
+
 }

@@ -325,3 +325,20 @@ header nav span a:hover {
 #thesis-link {
   text-decoration: none;
 }
+
+/*-- footer --*/
+
+footer {
+  display: flex;
+  border-top: 1px solid rgb(229, 229, 229);
+  padding: 16px 24px 32px 24px;
+}
+
+footer .footer-right {
+  display: flex;
+  flex-grow: 1;
+}
+
+footer .footer-left span {
+  padding: 0 3px;
+}

@@ -90,6 +90,15 @@ header nav span a:hover {
   color: rgb(45, 45, 45);
 }
 
+header .mobile-header {
+  display: flex;
+  justify-content: space-around;
+  height: 64px;
+  background-color: white;
+  align-items: center;
+  width: 100%;
+}
+
 /*-- banner --*/
 
 .banner {
@@ -188,7 +197,7 @@ header nav span a:hover {
   padding: 16px;
 }
 
-.info-cards #orientation {
+#orientation {
   padding-top: 0;
 }
 
@@ -341,4 +350,108 @@ footer .footer-right {
 
 footer .footer-left span {
   padding: 0 3px;
+}
+
+/*-- media queries --*/
+/*-- hide elements from desktop --*/
+@media only screen and (min-width: 640px) {
+
+  header .mobile-header {
+    display: none; /*-- hide mobile menu from desktop --*/
+  }
+
+  .banner .banbox #mobile-start {
+    display: none;
+  }
+
+  #mobile-img {
+    display: none;
+  }
+
+}
+
+/*-- mobile --*/
+@media only screen and (max-width: 640px) {
+
+  header .logo,
+  header nav {
+    display: none;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner img {
+    display: flex;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .banner .banbox {
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .banner .banbox .button {
+    display: none;
+  }
+
+  .banner .banbox .mobile-start-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+.banner .banbox #mobile-start {
+  display: flex;
+  width: 90%;
+}
+
+.info .info-left {
+  display: none;
+}
+
+.info .info-cards .card .card-info span {
+  display: flex;
+  padding-top: 8px;
+}
+
+#desktop-img, #orientation {
+  display: none;
+}
+
+#highlight {
+  background-color: white;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  align-content: center;
+}
+
+.info .info-cards {
+  width: auto;
+  margin: 0;
+  justify-content: center;
+}
+
+.info .info-cards .card {
+  flex-direction: column;
+  width: 95%;
+}
+
+.info .info-cards .card .card-mobile-img {
+  max-width: 100%;
+}
+
+.info .info-cards .card .card-mobile-img img {
+  width: 100%;
+  padding: 0;
+}
+
+
 }
